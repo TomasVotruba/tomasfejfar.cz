@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a074a03a1e5073420b03e99109ef8047",
+    "content-hash": "58a4417c3cd8cb9f6f13f24caca191ee",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -1644,7 +1644,7 @@
         },
         {
             "name": "symplify/package-builder",
-            "version": "v5.3.9",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symplify/PackageBuilder.git",
@@ -2023,11 +2023,62 @@
             "time": "2018-12-16T10:36:48+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "symplify/latte-to-twig-converter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Symplify/LatteToTwigConverter.git",
+                "reference": "cca2192f1742bad9068bd4d59332ecf8626db0f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Symplify/LatteToTwigConverter/zipball/cca2192f1742bad9068bd4d59332ecf8626db0f7",
+                "reference": "cca2192f1742bad9068bd4d59332ecf8626db0f7",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^2.5",
+                "php": "^7.1",
+                "symfony/console": "^3.4|^4.1",
+                "symfony/dependency-injection": "^3.4|^4.1",
+                "symfony/finder": "^3.4|^4.1",
+                "symfony/http-kernel": "^3.4|^4.1",
+                "symplify/package-builder": "^5.4",
+                "thecodingmachine/safe": "^0.1.11"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5"
+            },
+            "bin": [
+                "bin/latte-to-twig-converter"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symplify\\LatteToTwigConverter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Latte to Twig converter converts Latte to Twig",
+            "time": "2019-01-12T19:26:30+00:00"
+        }
+    ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "symplify/latte-to-twig-converter": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
